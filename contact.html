@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Royal Blue</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --royal-blue: #4169E1;
+    --dark-blue: #0B1F5E;
+    --blue: #1E40AF;
+    --light-blue: #60A5FA;
+    --white: #ffffff;
+    --light-bg: #f5f8ff;
+    --text: #172554;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+}
+
+/* Navbar */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 75px;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.footer-logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.logo span,
+.footer-logo span {
+    color: var(--royal-blue);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--royal-blue);
+}
+
+.nav-btn {
+    text-decoration: none;
+    background: var(--royal-blue);
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* =========================
+   CONTACT PAGE
+========================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-hero {
+    min-height: 55vh;
+    padding: 150px 8% 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #bfdbfe,
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eff6ff
+        );
+}
+
+.contact-hero h1 {
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 1;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.contact-hero h1 span {
+    color: var(--royal-blue);
+}
+
+.contact-hero > div > p:not(.small-title) {
+    max-width: 600px;
+    margin: auto;
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* Contact Main */
+
+.contact-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+}
+
+
+/* Contact Information */
+
+.contact-info h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.info-text {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 15px;
+    background: #dbeafe;
+
+    font-size: 23px;
+}
+
+.contact-item h3 {
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #64748b;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    padding: 40px;
+
+    background: white;
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(30, 64, 175, 0.12);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 15px 17px;
+
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+
+    background: #f8fbff;
+
+    color: var(--text);
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--royal-blue);
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(65, 105, 225, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: var(--royal-blue);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--dark-blue);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(65, 105, 225, 0.3);
+}
+
+
+/* Contact Responsive */
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 70px 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 38px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .contact-hero {
+        padding: 130px 20px 70px;
+    }
+
+    .contact-hero h1 {
+        font-size: 55px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Royal<span>Blue</span></div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#colors">Colors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div>
+            <p class="small-title">GET IN TOUCH</p>
+            <h1>Let's <span>Talk.</span></h1>
+            <p>
+                Have a question, idea, or project in mind?
+                Send us a message and we'll get back to you.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+        <div class="contact-info">
+
+            <p class="section-label">CONTACT US</p>
+            <h2>We'd love to hear from you.</h2>
+
+            <p class="info-text">
+                Whether you want to know more about Royal Blue,
+                need help with a project, or simply want to say hello,
+                feel free to contact us.
+            </p>
+
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>hello@royalblue.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h3>Address</h3>
+                    <p>123 Blue Street, New York</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Form -->
+        <div class="contact-form">
+
+            <form>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Enter subject"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        rows="7"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            Royal<span>Blue</span>
+        </div>
+
+        <p>Designed with the power of color.</p>
+
+        <p class="copyright">
+            © 2026 Royal Blue. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
